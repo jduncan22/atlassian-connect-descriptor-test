@@ -2,7 +2,7 @@
   "name": "ASOW Canvas",
   "description": "Collaborative canvas for planning and managing Agile work with real-time multiplayer chat and work item management",
   "key": "asow-canvas",
-  "baseUrl": "http://localhost:8080",
+  "baseUrl": "https://asow-canvas-demo.us-west-2.platdev.atl-paas.net",
   "vendor": {
     "name": "Atlassian",
     "url": "https://www.atlassian.com"
@@ -14,9 +14,10 @@
     "installed": "/jira/events/installed",
     "uninstalled": "/jira/events/uninstalled"
   },
-  "permissions": [
-    "read",
-    "write"
+  "scopes": [
+    "read:jira-work",
+    "write:jira-work",
+    "read:jira-user"
   ],
   "modules": {
     "jiraProjectPages": [
@@ -38,11 +39,6 @@
       }
     ]
   },
-  "scopes": [
-    "read:jira-work",
-    "write:jira-work",
-    "read:jira-user"
-  ],
   "apiVersion": 1,
   "apiMigrations": {
     "gdpr": true
