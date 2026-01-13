@@ -14,11 +14,6 @@
     "installed": "/jira/events/installed",
     "uninstalled": "/jira/events/uninstalled"
   },
-  "scopes": [
-    "read:jira-work",
-    "write:jira-work",
-    "read:jira-user"
-  ],
   "modules": {
     "jiraProjectPages": [
       {
@@ -30,17 +25,9 @@
         "description": {
           "value": "Collaborative canvas for planning and managing Agile work"
         },
-        "url": "/",
-        "icon": {
-          "width": 24,
-          "height": 24,
-          "url": "/assets/icon.svg"
-        }
+        "url": "/"
       }
     ]
   },
-  "apiVersion": 1,
-  "apiMigrations": {
-    "gdpr": true
-  }
+  "apiVersion": 1
 }
